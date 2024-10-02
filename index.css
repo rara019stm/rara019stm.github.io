@@ -11,19 +11,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.signup-message{
-    margin-left: 270px;
-}
-
-.logogoogle {
-    max-width: 10px;
-    height: 10px;
-}
-.logoface {
-    max-width: 10px;
-    height: 10px;
-}
-
 header {
     background-color: #0026ff;
 }
@@ -33,11 +20,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 6rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
 }
 
 .logo img {
@@ -52,7 +34,6 @@ header {
 
 .nav-list ul {
     display: flex;
-    justify-content: center;
     list-style: none;
 }
 
@@ -138,53 +119,91 @@ header {
     }
 }
 
-.form-container {
-    max-width: 600px; /* Limita a largura do formulário */
-    margin: 2rem auto; /* Centraliza o formulário com margem superior e inferior */
-    padding: 1rem;
-    background: #e0f7fa; /* Azul bebê */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+.center-content {
+    position: relative; /* Permite o posicionamento absoluto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 2rem auto; /* Centraliza o conteúdo */
+    max-width: 1200px; /* Limita a largura total do site */
 }
 
-.form-container h4 {
-    margin-bottom: 1rem;
-    color: #4b4b4b;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; /* Centraliza o título do formulário */
+.center-content img {
+    display: block; /* Faz a imagem ser exibida como um bloco */
+    max-width: 66%; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 15px; /* Adiciona borda arredondada */
 }
 
-.form-group {
-    margin-bottom: 1rem;
-}
-.social{
-    text-decoration: none;
+
+.valores-missao-visao {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
+.biografia {
+    max-width: 300px; /* Limita a largura de cada seção */
+    text-align: center;
 }
 
-.form-group input {
-    width: 101%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove margens */
+    padding-bottom: 50px; /* Espaço para a barra social */
 }
 
-.form-group button {
-    padding: 0.75rem 1.5rem;
+.comentario {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0; /* Reduz a margem para colar na parte inferior */
+    text-align: center;
+}
+
+.comentario-img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-right: 1rem; /* Espaço entre imagem e texto */
+}
+
+.comentario-texto p {
+    max-width: 400px; /* Limita a largura do texto do comentário */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -3px;
+    left: -10px;
+    margin: 0;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaço entre os ícones sociais */
+}
+
+.social-icons img {
+    width: 30px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+}
+
+/* Estilo do botão "Saiba Mais" */
+.center-button {
     border: none;
-    border-radius: 34px;
+    padding: 7px 15px;
+    border-radius: 22px;
     background-color: #0187a7;
     color: #fff;
-    font-size: 1rem;
-    margin-left: 234px;
+    font-weight: 500;
+    font-size: 1.1rem;
     cursor: pointer;
+    margin-top: 3px; /* Adiciona margem superior para descer o botão */
 }
 
-.form-group button:hover {
-    background-color: #016f8b;
+.center-button a {
+    text-decoration: none;
+    color: #fff;
 }
